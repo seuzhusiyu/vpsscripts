@@ -18,8 +18,13 @@ apt install -y socat
 curl https://get.acme.sh | sh
 ~/.acme.sh/acme.sh --register-account -m seuzhusiyu@gmail.com
 
-~/.acme.sh/acme.sh --issue -d test.yccgfw1.com --key-file /root/private.key --fullchain-file /root/cert.crt
+~/.acme.sh/acme.sh --issue -d test.yccgfw1.com  --standalone
+
+~/.acme.sh/acme.sh --installcert -d test.yccgfw1.com --key-file /root/private.key --fullchain-file /root/cert.crt
+
 
 
 # x-ui 
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+
+# Modify x-ui console cert path
