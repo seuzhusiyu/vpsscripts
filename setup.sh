@@ -1,8 +1,8 @@
 #install git
-apt-get install git
+apt-get -y install git 
 
 #install zsh
-apt-get install zsh
+apt-get -y install zsh
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
